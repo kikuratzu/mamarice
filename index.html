@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama Rice — азиатска кухня</title>
+  <meta name="description" content="Mama Rice — рамен, удон, супи и азиатски десерти. 5–10 € на човек. Ново място в Kaufland Централни хали, София.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a href="#top" class="logo"><span class="logo-mark">米</span> Mama Rice</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#menu">Меню</a>
+      <a href="#about">За нас</a>
+      <a href="#reviews">Отзиви</a>
+      <a href="#visit">Посетете ни</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="lanterns" aria-hidden="true">
+        <span class="lantern l1"></span>
+        <span class="lantern l2"></span>
+        <span class="lantern l3"></span>
+      </div>
+
+      <div class="hero-text">
+        <p class="eyebrow reveal">Азиатска кухня · София</p>
+        <h1 class="reveal">Купа топлина,<br><em>като при мама.</em></h1>
+        <p class="lead reveal">Рамен, удон, хрупкави немс и сладки мочи — прясно приготвени всеки ден.</p>
+        <div class="hero-meta reveal">
+          <span class="chip">★ 4,6 <small>(152)</small></span>
+          <span class="chip">5 – 10 € на човек</span>
+          <span class="chip">Отваря в 10:00 ч.</span>
+        </div>
+        <div class="hero-cta reveal">
+          <a href="#menu" class="btn btn-primary">Виж менюто</a>
+          <a href="tel:+359888272727" class="btn btn-ghost">Обади се</a>
+        </div>
+      </div>
+
+      <div class="hero-bowl" aria-hidden="true">
+        <div class="steam">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="bowl">
+          <div class="broth">
+            <span class="egg"></span>
+            <span class="nori"></span>
+            <span class="onion o1"></span>
+            <span class="onion o2"></span>
+            <span class="onion o3"></span>
+          </div>
+          <div class="chopsticks"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS BANNER -->
+    <section class="banner reveal">
+      <span class="banner-tag">Ново</span>
+      <p>Заповядайте в нашия нов обект в <strong>гр. София, Kaufland Централни хали</strong>!</p>
+    </section>
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+      <p class="eyebrow center reveal">Меню и акценти</p>
+      <h2 class="reveal">Любимците на гостите</h2>
+
+      <div class="filters reveal" role="tablist">
+        <button class="filter active" data-filter="all">Всички</button>
+        <button class="filter" data-filter="soup">Рамен и супи</button>
+        <button class="filter" data-filter="main">Основни</button>
+        <button class="filter" data-filter="dessert">Десерти</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <article class="dish reveal" data-cat="soup">
+          <div class="dish-icon">🌶️</div>
+          <h3>Лютиво-кисела супа</h3>
+          <p>Пикантна и освежаваща класика.</p>
+        </article>
+        <article class="dish reveal" data-cat="soup">
+          <div class="dish-icon">🍜</div>
+          <h3>Mama Rice Ramen</h3>
+          <p>Нашият фирмен рамен.</p>
+          <span class="badge">Фирмено</span>
+        </article>
+        <article class="dish reveal" data-cat="soup">
+          <div class="dish-icon">🥢</div>
+          <h3>Tonkotsu Ramen with Beef</h3>
+          <p>Тонкоцу рамен с говеждо.</p>
+        </article>
+        <article class="dish reveal" data-cat="soup">
+          <div class="dish-icon">🍲</div>
+          <h3>Beef Udon Noodle Soup</h3>
+          <p>Супа с удон нудли и говеждо.</p>
+        </article>
+        <article class="dish reveal" data-cat="soup">
+          <div class="dish-icon">🥣</div>
+          <h3>Ramen Bowl with Side Dishes</h3>
+          <p>Рамен с гарнитури.</p>
+        </article>
+        <article class="dish reveal" data-cat="main">
+          <div class="dish-icon">🥦</div>
+          <h3>VIP пиле със зеленчуци</h3>
+          <p>Пиле със зеленчуци.</p>
+        </article>
+        <article class="dish reveal" data-cat="main">
+          <div class="dish-icon">🍚</div>
+          <h3>Sweet and Sour Chicken Rice</h3>
+          <p>Пиле в сладко-кисел сос с ориз.</p>
+        </article>
+        <article class="dish reveal" data-cat="main">
+          <div class="dish-icon">🥟</div>
+          <h3>Nems et Poulet Frit</h3>
+          <p>Немс и пържено пиле.</p>
+        </article>
+        <article class="dish reveal" data-cat="dessert">
+          <div class="dish-icon">🍓</div>
+          <h3>Strawberry Crepe Cake</h3>
+          <p>Торта от палачинки с ягоди.</p>
+        </article>
+        <article class="dish reveal" data-cat="dessert">
+          <div class="dish-icon">🍡</div>
+          <h3>Mochi with Cream and Fruit</h3>
+          <p>Мочи със сметана и плодове.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-text reveal">
+        <p class="eyebrow">За нас</p>
+        <h2>Бърза, топла и вкусна азиатска храна</h2>
+        <p>В Mama Rice всяка купа се приготвя с грижа — от наситения бульон на рамена до крехкото мочи за десерт. Достъпни цени, приятна атмосфера и храна, към която ще искате да се връщате.</p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><strong data-count="4.6" data-decimals="1">0</strong><span>средна оценка</span></div>
+        <div class="stat reveal"><strong data-count="152">0</strong><span>отзива</span></div>
+        <div class="stat reveal"><strong>5–10 €</strong><span>на човек</span></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews">
+      <p class="eyebrow center reveal">Обобщение на отзивите</p>
+      <div class="rating-card reveal">
+        <div class="rating-big">4,6</div>
+        <div class="stars" aria-label="4,6 от 5 звезди">
+          <span class="stars-fill" style="--rating: 4.6"></span>
+        </div>
+        <p>152 отзива</p>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section visit" id="visit">
+      <div class="visit-card reveal">
+        <h2>Посетете ни</h2>
+        <ul>
+          <li><span>📍</span> Kaufland Централни хали, гр. София</li>
+          <li><span>🕙</span> Отваря в 10:00 ч.</li>
+          <li><span>📞</span> <a href="tel:+359888272727">+359 888 27 27 27</a></li>
+          <li><span>🌐</span> <a href="https://mamarice.bg/" target="_blank" rel="noopener">mamarice.bg</a></li>
+        </ul>
+        <a href="tel:+359888272727" class="btn btn-primary">Свържете се с нас</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span class="logo-mark">米</span> Mama Rice · © <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
